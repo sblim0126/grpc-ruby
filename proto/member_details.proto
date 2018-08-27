@@ -1,0 +1,28 @@
+syntax = 'proto3';
+package members_details;
+
+service MemberService {
+  rpc Hello( HelloRequest ) returns ( HelloResponse ) {}
+  rpc SearchMembers( SearchRequest ) returns ( Members ) {}
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string body = 1;
+}
+
+message SearchRequest {
+  string name = 1;
+}
+
+message Members {
+  repeated Member students = 1;
+}
+
+message Member {
+  string name = 1;
+  int64 age = 2;
+}

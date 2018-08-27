@@ -1,0 +1,73 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (5.1.6)
+      activesupport (= 5.1.6)
+    activerecord (5.1.6)
+      activemodel (= 5.1.6)
+      activesupport (= 5.1.6)
+      arel (~> 8.0)
+    activesupport (5.1.6)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    arel (8.0.0)
+    coderay (1.1.2)
+    concurrent-ruby (1.0.5)
+    daemons (1.2.6)
+    diff-lcs (1.3)
+    google-protobuf (3.6.1)
+    googleapis-common-protos-types (1.0.2)
+      google-protobuf (~> 3.0)
+    grpc (1.14.1)
+      google-protobuf (~> 3.1)
+      googleapis-common-protos-types (~> 1.0.0)
+    grpc-tools (1.14.1)
+    i18n (1.1.0)
+      concurrent-ruby (~> 1.0)
+    little-plugger (1.1.4)
+    logging (2.2.2)
+      little-plugger (~> 1.1)
+      multi_json (~> 1.10)
+    method_source (0.9.0)
+    minitest (5.11.3)
+    multi_json (1.13.1)
+    mysql2 (0.4.10)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    rake (12.3.1)
+    rspec (3.8.0)
+      rspec-core (~> 3.8.0)
+      rspec-expectations (~> 3.8.0)
+      rspec-mocks (~> 3.8.0)
+    rspec-core (3.8.0)
+      rspec-support (~> 3.8.0)
+    rspec-expectations (3.8.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.8.0)
+    rspec-mocks (3.8.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.8.0)
+    rspec-support (3.8.0)
+    thread_safe (0.3.6)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activerecord
+  daemons
+  grpc
+  grpc-tools
+  logging
+  mysql2
+  pry
+  rake
+  rspec
+
+BUNDLED WITH
+   1.16.4
